@@ -1,7 +1,7 @@
 import type { Property } from '../domain/types'
 
 export const propertyTypes = ['Office', 'Retail', 'Warehouse', 'Commercial Lot', 'Mixed Use']
-export const cities = ['Makati City', 'Taguig', 'Quezon City', 'Pasig', 'Cebu City', 'Laguna']
+export const cities = ['Davao City', 'Buhangin', 'Lanang', 'Matina', 'Makati City', 'Taguig']
 export const formatNumber = (value: number) => new Intl.NumberFormat('en-PH').format(value)
 export const formatPrice = (property: Pick<Property, 'price' | 'price_period'>) =>
   new Intl.NumberFormat('en-PH', { style: 'currency', currency: 'PHP', maximumFractionDigits: 0 }).format(property.price)

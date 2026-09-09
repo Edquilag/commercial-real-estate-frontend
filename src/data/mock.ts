@@ -11,22 +11,22 @@ export const photos = {
 }
 export const demoUser: User = { id: 101, name: 'Juan dela Cruz', email: 'juan@example.com', role: 'client', status: 'approved', email_verified_at: '2026-09-01T00:00:00Z' }
 export const brokers: Broker[] = [
-  { id: 201, name: 'Isabella Santos', company: 'Meridian Commercial', photo: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=160&q=85', verified: true },
-  { id: 202, name: 'Miguel Reyes', company: 'Meridian Commercial', photo: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=160&q=85', verified: true },
+  { id: 201, name: 'Maria Santos', company: 'EstateHub Commercial', photo: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=160&q=85', verified: true },
+  { id: 202, name: 'Jose Dela Cruz', company: 'EstateHub Commercial', photo: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=160&q=85', verified: true },
 ]
 const seed: Array<[string, string, Property['listing_type'], string, number, number, string]> = [
-  ['The Grove at Makati', 'Office', 'sale', 'Legazpi Village, Makati City', 185000000, 1240, photos.tower],
-  ['Harbor Point Retail', 'Retail', 'lease', 'Bonifacio Global City, Taguig', 280000, 420, photos.retail],
-  ['Northline Logistics Hub', 'Warehouse', 'sale', 'Cabuyao, Laguna', 96000000, 4800, photos.warehouse],
-  ['Civic House Offices', 'Office', 'lease', 'Ortigas Center, Pasig', 420000, 680, photos.workspace],
-  ['The Foundry', 'Mixed Use', 'sale', 'New Manila, Quezon City', 142000000, 2150, photos.mixed],
-  ['South Coast Commercial Lot', 'Commercial Lot', 'sale', 'Lahug, Cebu City', 75000000, 3200, photos.land],
-  ['One BGC Executive Floor', 'Office', 'lease', 'Bonifacio Global City, Taguig', 650000, 900, photos.office],
-  ['Salcedo Corner Studio', 'Retail', 'lease', 'Salcedo Village, Makati City', 150000, 160, photos.retail],
-  ['Eastgate Distribution Center', 'Warehouse', 'lease', 'Santa Rosa, Laguna', 320000, 2400, photos.warehouse],
-  ['Parkview Business Suites', 'Office', 'sale', 'Cebu Business Park, Cebu City', 52000000, 380, photos.workspace],
-  ['Capitol Commons Exchange', 'Mixed Use', 'sale', 'Kapitolyo, Pasig', 88000000, 760, photos.mixed],
-  ['North Avenue Commercial Site', 'Commercial Lot', 'sale', 'Diliman, Quezon City', 64000000, 1100, photos.land],
+  ['Modern Office Building', 'Office', 'sale', 'Downtown, Davao City', 35000000, 2000, photos.tower],
+  ['Retail Space', 'Retail', 'lease', 'Lanang, Davao City', 200000, 500, photos.retail],
+  ['Commercial Lot', 'Commercial Lot', 'sale', 'Buhangin, Davao City', 15000000, 1000, photos.land],
+  ['Warehouse Facility', 'Warehouse', 'lease', 'Davao City', 120000, 900, photos.warehouse],
+  ['Mixed Use Building', 'Mixed Use', 'sale', 'Matina, Davao City', 50000000, 1500, photos.mixed],
+  ['Office Space', 'Office', 'lease', 'Davao City', 180000, 500, photos.workspace],
+  ['Executive Office Floor', 'Office', 'lease', 'Lanang, Davao City', 250000, 700, photos.office],
+  ['Corner Retail Unit', 'Retail', 'lease', 'Poblacion, Davao City', 150000, 260, photos.retail],
+  ['Distribution Center', 'Warehouse', 'lease', 'Buhangin, Davao City', 320000, 2400, photos.warehouse],
+  ['Business Suites', 'Office', 'sale', 'Davao Business Park', 52000000, 380, photos.workspace],
+  ['Commercial Exchange', 'Mixed Use', 'sale', 'Matina, Davao City', 88000000, 760, photos.mixed],
+  ['North Commercial Site', 'Commercial Lot', 'sale', 'Buhangin, Davao City', 64000000, 1100, photos.land],
 ]
 export const mockProperties: Property[] = seed.map(([title, type, listing, location, price, area, image], index) => ({
   id: index + 1, title, property_type: type, listing_type: listing, location, price, floor_area: area,
